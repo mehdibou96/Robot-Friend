@@ -1,8 +1,10 @@
 import React from "react";
 import "./From.css";
 import { useState } from "react";
-const Form = ({ addRobot }) => {
+import { useList } from "../contexts/ListContexts";
+const Form = () => {
   const [name, setName] = useState("");
+  const { addRobot } = useList();
   return (
     <>
       <form

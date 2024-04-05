@@ -1,8 +1,11 @@
 import React from "react";
 import "./List.css";
 import { useState } from "react";
-const List = ({ robot, removeRobot }) => {
+import { useList } from "../contexts/ListContexts";
+const List = () => {
   const [search, setSearch] = useState("");
+  const { robot, removeRobot } = useList();
+
   return (
     <>
       <div className="list">
