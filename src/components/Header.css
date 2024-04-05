@@ -1,0 +1,6 @@
+header {
+  margin: 16px 0;
+  border-bottom: 1px solid var(--pico-primary);
+  max-width: 1080px;
+  margin: auto;
+}
